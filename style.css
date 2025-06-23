@@ -15,6 +15,7 @@ body{
     border: 2px solid white;
     background-color: #686868;
     border-radius: 20px;
+    box-shadow: #585858 0px 0px 50px;
 }
 
 .headerProfile{
@@ -25,6 +26,9 @@ body{
     padding-bottom: 10px;
 }
 
+.headerProfile h1:hover{
+    text-shadow: #f5f5f5 0px 0px 10px;
+}
 .bodyProfile{
     display: flex;
     align-items: center;
@@ -38,6 +42,10 @@ body{
     object-fit: cover;
     border-radius: 50%;
     border: 3px solid rgb(95, 95, 95);
+}
+
+.info:hover{
+    text-shadow: #f5f5f5 0px 0px 10px;
 }
 
 .info h2{
@@ -56,6 +64,15 @@ body{
     border-radius: 6px;
 }
 
+.bio p:hover, .skill ul:hover{
+    background-color: #4a4a4a;
+    transition: background-color 0.3s ease;
+}
+
+.bio p:hover,.bio h3:hover{
+    text-shadow: #f5f5f5 0px 0px 10px;
+}
+
 .skill ul{
     list-style-type: square;
     padding-left: 30px;
@@ -67,11 +84,21 @@ body{
     color: white;
 }
 
+.skill h3:hover{
+    text-shadow: #f5f5f5 0px 0px 10px;
+}
+
 .icon{
     width: 20px;
     height: 20px;
     vertical-align: middle;
     margin-right: 5px;
+}
+
+.icon:hover{
+    width: 25px;
+    height: 25px;
+    transition: width 0.3s ease, height 0.3s ease;
 }
 
 @media (max-width: 500px){
